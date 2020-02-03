@@ -5,28 +5,46 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint lib",
-    "test": "npm run lint && babel-node test"
+    "test": "npm run lint && babel-node test",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gcanti/tcomb-form-native.git"
+    "url": "https://github.com/Rhumbix/tcomb-form-native.git"
   },
-  "author": "Giulio Canti <giulio.canti@gmail.com>",
+  "author": "Rhumbix <dev@rhumbix.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gcanti/tcomb-form-native/issues"
+    "url": "https://github.com/Rhumbix/tcomb-form-native/issues"
   },
-  "homepage": "https://github.com/gcanti/tcomb-form-native",
+  "homepage": "https://github.com/Rhumbix/tcomb-form-native",
   "dependencies": {
     "tcomb-validation": "^3.0.0"
   },
   "devDependencies": {
     "babel": "5.8.34",
-    "babel-core": "5.8.34",
+    "@babel/core": "7.5.5",
+    "@babel/plugin-proposal-async-generator-functions": "7.2.0",
+    "@babel/plugin-proposal-class-properties": "7.5.5",
+    "@babel/plugin-proposal-decorators": "7.4.4",
+    "@babel/plugin-proposal-object-rest-spread": "7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "7.2.0",
+    "@babel/plugin-transform-modules-commonjs": "7.5.0",
+    "@babel/preset-env": "7.5.5",
+    "@babel/preset-react": "7.0.0",
+    "@babel/preset-typescript": "7.3.3",
+    "babel-plugin-dynamic-import-node": "2.3.0",
+    "babel-plugin-lodash": "3.3.4",
     "eslint": "0.23.0",
     "eslint-plugin-react": "2.5.2",
     "react": "^15.0.0",
-    "tape": "3.5.0"
+    "tape": "3.5.0",
+    "rollup": "1.23.1",
+    "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-node-resolve": "5.2.0",
+    "mocha": "2.4.5",
+    "nodemon": "1.19.1"
   },
   "tags": [
     "tcomb",
