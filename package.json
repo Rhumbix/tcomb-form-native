@@ -23,7 +23,8 @@
   },
   "homepage": "https://github.com/Rhumbix/tcomb-json-schema#readme",
   "dependencies": {
-    "tcomb-validation": "^3.0.0"
+    "tcomb-validation": "^3.0.0",
+    "@rhumbix/tcomb-json-schema": "1.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
