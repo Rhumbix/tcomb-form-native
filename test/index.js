@@ -2,6 +2,7 @@
 
 var test = require('tape');
 var t = require('tcomb-validation');
+var util = require('@rhumbix/tcomb-json-schema').util;
 var bootstrap = {
   checkbox: function () {},
   datepicker: function () {},
@@ -178,7 +179,7 @@ test('Textbox:help', function (tape) {
 });
 
 test('Textbox:value', function (tape) {
-  tape.plan(3);
+  tape.plan(6);
 
   tape.strictEqual(
     new Textbox({
@@ -201,14 +202,43 @@ test('Textbox:value', function (tape) {
 
   tape.strictEqual(
     new Textbox({
-      type: t.Number,
+      type: util.Num,
       options: {},
       ctx: ctx,
       value: 1.1
     }).getLocals().value,
     '1.1',
-    'should handle numeric values');
+    'should handle type number values (format to string for UI rendering)');
 
+  tape.strictEqual(
+    new Textbox({
+      type: util.Num,
+      options: {},
+      ctx: ctx,
+      value: 1.1
+    }).pureValidate().value,
+    1.1,
+    'should handle type number values (parse to number for storing)');
+
+  tape.strictEqual(
+    new Textbox({
+      type: util.Int,
+      options: {},
+      ctx: ctx,
+      value: 5.0
+    }).getLocals().value,
+    '5',
+    'should handle type integer values (format to string for UI rendering)');
+
+  tape.strictEqual(
+    new Textbox({
+      type: util.Int,
+      options: {},
+      ctx: ctx,
+      value: 5.0
+    }).pureValidate().value,
+    5,
+    'should handle type integer values (parse to number for storing)');
 });
 
 test('Textbox:transformer', function (tape) {
@@ -1152,4 +1182,3 @@ test('List:should support unions', (assert) => {
 
   assert.strictEqual(component.getItems()[0].input.props.type, UnknownAccount);
 });
-

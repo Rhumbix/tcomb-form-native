@@ -23,16 +23,22 @@
   },
   "homepage": "https://github.com/Rhumbix/tcomb-json-schema#readme",
   "dependencies": {
-    "tcomb-validation": "^3.0.0",
-    "@rhumbix/tcomb-json-schema": "1.0.6"
+    "@rhumbix/tcomb-json-schema": "1.0.6",
+    "babel-eslint": "^10.0.3",
+    "tcomb-validation": "^3.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
-    "eslint": "0.23.0",
-    "rollup": "1.23.1",
-    "rollup-plugin-babel": "4.3.3",
-    "rollup-plugin-node-resolve": "5.2.0",
+    "@types/eslint-plugin-prettier": "^2.2.0",
+    "@types/prettier": "^1.7.0",
+    "babel": "5.8.34",
+    "babel-core": "5.8.34",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-react": "2.5.2",
+    "prettier": "^1.7.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1",
     "tape": "3.5.0"
   },
   "tags": [
