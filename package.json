@@ -1,38 +1,31 @@
 {
-  "name": "@rhumbix/tcomb-form-native",
-  "version": "1.0.0",
+  "name": "tcomb-form-native",
+  "version": "0.6.4",
   "description": "react-native powered UI library for developing forms writing less code",
-  "main": "dist/index.js",
-  "files": [
-    "dist"
-  ],
+  "main": "index.js",
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
     "lint": "eslint lib",
     "test": "npm run lint && babel-node test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Rhumbix/tcomb-form-native.git"
+    "url": "https://github.com/gcanti/tcomb-form-native.git"
   },
-  "author": "Rhumbix <dev@rhumbix.com>",
+  "author": "Giulio Canti <giulio.canti@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Rhumbix/tcomb-json-schema/issues"
+    "url": "https://github.com/gcanti/tcomb-form-native/issues"
   },
-  "homepage": "https://github.com/Rhumbix/tcomb-json-schema#readme",
+  "homepage": "https://github.com/gcanti/tcomb-form-native",
   "dependencies": {
     "tcomb-validation": "^3.0.0"
   },
   "devDependencies": {
-    "@babel": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
+    "babel": "5.8.34",
+    "babel-core": "5.8.34",
     "eslint": "0.23.0",
-    "rollup": "1.23.1",
-    "rollup-plugin-babel": "4.3.3",
-    "rollup-plugin-node-resolve": "5.2.0",
+    "eslint-plugin-react": "2.5.2",
+    "react": "^15.0.0",
     "tape": "3.5.0"
   },
   "tags": [
