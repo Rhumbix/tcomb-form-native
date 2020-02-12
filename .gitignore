@@ -4,5 +4,3 @@ AwesomeProject.xcodeproj
 AwesomeProjectTests
 index.ios.js
 iOS
-dist
-yarn.lock
