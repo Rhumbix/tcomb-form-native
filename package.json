@@ -18,12 +18,15 @@
   },
   "homepage": "https://github.com/gcanti/tcomb-form-native",
   "dependencies": {
+    "@rhumbix/tcomb-json-schema": "1.0.6",
+    "react": "^15.6.1",
     "tcomb-validation": "^3.0.0"
   },
   "devDependencies": {
     "babel": "5.8.34",
     "babel-core": "5.8.34",
-    "eslint": "0.23.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^4.19.1",
     "eslint-plugin-react": "2.5.2",
     "react": "^15.0.0",
     "tape": "3.5.0"
