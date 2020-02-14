@@ -19,7 +19,6 @@
   "homepage": "https://github.com/gcanti/tcomb-form-native",
   "dependencies": {
     "@rhumbix/tcomb-json-schema": "1.0.7",
-    "react": "^15.6.1",
     "tcomb-validation": "^3.0.0"
   },
   "devDependencies": {
